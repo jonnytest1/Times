@@ -1,0 +1,98 @@
+2018-04-22 14:05:27 9120 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-04-22 14:05:27 9120 [Note] InnoDB: Uses event mutexes
+2018-04-22 14:05:27 9120 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-04-22 14:05:27 9120 [Note] InnoDB: Number of pools: 1
+2018-04-22 14:05:27 9120 [Note] InnoDB: Using SSE2 crc32 instructions
+2018-04-22 14:05:27 9120 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-04-22 14:05:27 9120 [Note] InnoDB: Completed initialization of buffer pool
+2018-04-22 14:05:27 9120 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-04-22 14:05:27 9120 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2018-04-22 14:05:27 9120 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-04-22 14:05:27 9120 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-04-22 14:05:27 9120 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-04-22 14:05:27 9120 [Note] InnoDB: Waiting for purge to start
+2018-04-22 14:05:27 9120 [Note] InnoDB: 5.7.21 started; log sequence number 1619987
+2018-04-22 14:05:27 15600 [Note] InnoDB: Loading buffer pool(s) from D:\dprogramme\mariadb-10.2.14-winx64\data\ib_buffer_pool
+2018-04-22 14:05:27 9120 [Note] Plugin 'FEEDBACK' is disabled.
+2018-04-22 14:05:27 9120 [Note] Server socket created on IP: '::'.
+2018-05-10 15:14:12 20744 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-05-10 15:14:12 20744 [Note] InnoDB: Uses event mutexes
+2018-05-10 15:14:12 20744 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-05-10 15:14:12 20744 [Note] InnoDB: Number of pools: 1
+2018-05-10 15:14:12 20744 [Note] InnoDB: Using SSE2 crc32 instructions
+2018-05-10 15:14:12 20744 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-05-10 15:14:12 20744 [Note] InnoDB: Completed initialization of buffer pool
+2018-05-10 15:14:12 20744 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-05-10 15:14:12 20744 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1680987
+2018-05-10 15:14:13 20744 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2018-05-10 15:14:13 20744 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-05-10 15:14:13 20744 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-05-10 15:14:13 20744 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-05-10 15:14:13 20744 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-05-10 15:14:13 20744 [Note] InnoDB: Waiting for purge to start
+2018-05-10 15:14:13 20744 [Note] InnoDB: 5.7.21 started; log sequence number 1680996
+2018-05-10 15:14:13 11648 [Note] InnoDB: Loading buffer pool(s) from D:\dprogramme\mariadb-10.2.14-winx64\data\ib_buffer_pool
+2018-05-10 15:14:13 11648 [Note] InnoDB: Buffer pool(s) load completed at 180510 15:14:13
+2018-05-10 15:14:13 20744 [Note] Plugin 'FEEDBACK' is disabled.
+2018-05-10 15:14:13 20744 [Note] Server socket created on IP: '::'.
+2018-05-10 15:21:10 15072 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-05-10 15:21:10 15072 [Note] InnoDB: Uses event mutexes
+2018-05-10 15:21:10 15072 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-05-10 15:21:10 15072 [Note] InnoDB: Number of pools: 1
+2018-05-10 15:21:10 15072 [Note] InnoDB: Using SSE2 crc32 instructions
+2018-05-10 15:21:10 15072 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-05-10 15:21:10 15072 [Note] InnoDB: Completed initialization of buffer pool
+2018-05-10 15:21:10 15072 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-05-10 15:21:10 15072 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1681024
+2018-05-10 15:21:10 15072 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2018-05-10 15:21:10 15072 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-05-10 15:21:10 15072 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-05-10 15:21:10 15072 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-05-10 15:21:10 15072 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-05-10 15:21:10 15072 [Note] InnoDB: Waiting for purge to start
+2018-05-10 15:21:10 15072 [Note] InnoDB: 5.7.21 started; log sequence number 1681033
+2018-05-10 15:21:10 2920 [Note] InnoDB: Loading buffer pool(s) from D:\dprogramme\mariadb-10.2.14-winx64\data\ib_buffer_pool
+2018-05-10 15:21:10 2920 [Note] InnoDB: Buffer pool(s) load completed at 180510 15:21:10
+2018-05-10 15:21:10 15072 [Note] Plugin 'FEEDBACK' is disabled.
+2018-05-10 15:21:10 15072 [Note] Server socket created on IP: '::'.
+2018-05-10 15:21:10 15072 [Note] Reading of all Master_info entries succeded
+2018-05-10 15:21:10 15072 [Note] Added new Master_info '' to hash table
+2018-05-10 15:21:10 15072 [Note] D:\dprogramme\mariadb-10.2.14-winx64\bin\mysqld.exe: ready for connections.
+Version: '10.2.14-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2018-05-10 15:21:36 3008 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-05-10 15:21:36 3008 [Note] InnoDB: Uses event mutexes
+2018-05-10 15:21:36 3008 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-05-10 15:21:36 3008 [Note] InnoDB: Number of pools: 1
+2018-05-10 15:21:36 3008 [Note] InnoDB: Using SSE2 crc32 instructions
+2018-05-10 15:21:36 3008 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-05-10 15:21:36 3008 [Note] InnoDB: Completed initialization of buffer pool
+2018-05-10 15:21:36 3008 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-05-10 15:21:36 3008 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1681061
+2018-05-10 15:21:36 3008 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2018-05-10 15:21:36 3008 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2018-05-10 15:21:36 3008 [Note] InnoDB: Creating shared tablespace for temporary tables
+2018-05-10 15:21:36 3008 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2018-05-10 15:21:36 3008 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2018-05-10 15:21:36 3008 [Note] InnoDB: Waiting for purge to start
+2018-05-10 15:21:37 3008 [Note] InnoDB: 5.7.21 started; log sequence number 1681070
+2018-05-10 15:21:37 7520 [Note] InnoDB: Loading buffer pool(s) from D:\dprogramme\mariadb-10.2.14-winx64\data\ib_buffer_pool
+2018-05-10 15:21:37 7520 [Note] InnoDB: Buffer pool(s) load completed at 180510 15:21:37
+2018-05-10 15:21:37 3008 [Note] Plugin 'FEEDBACK' is disabled.
+2018-05-10 15:21:37 3008 [Note] Server socket created on IP: '::'.
+2018-05-10 15:24:52 9224 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-05-10 15:24:52 9224 [Note] InnoDB: Uses event mutexes
+2018-05-10 15:24:52 9224 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-05-10 15:24:52 9224 [Note] InnoDB: Number of pools: 1
+2018-05-10 15:24:52 9224 [Note] InnoDB: Using SSE2 crc32 instructions
+2018-05-10 15:24:52 9224 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2018-05-10 15:24:52 9224 [Note] InnoDB: Completed initialization of buffer pool
+2018-05-10 15:24:52 9224 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2018-05-10 15:24:52 9224 [ERROR] InnoDB: The innodb_system data file 'ibdata1' must be writable
+2018-05-10 15:24:52 9224 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2018-05-10 15:24:52 9224 [Note] InnoDB: Starting shutdown...
+2018-05-10 15:24:52 9224 [ERROR] Plugin 'InnoDB' init function returned error.
+2018-05-10 15:24:52 9224 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2018-05-10 15:24:53 9224 [Note] Plugin 'FEEDBACK' is disabled.
+2018-05-10 15:24:53 9224 [ERROR] Unknown/unsupported storage engine: InnoDB
+2018-05-10 15:24:53 9224 [ERROR] Aborting
+

@@ -1,0 +1,26 @@
+version: '3'
+services:
+ maria:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: 123
+    MYSQL_USER: usr
+    MYSQL_PASSWORD: 123
+    MYSQL_DATABASE: times
+  ports:
+   - "3306:3306"
+  restart: always
+  networks:
+   - host
+ be:
+  image: jonathanheindl/test
+  depends_on:
+   - maria
+  ports: 
+   - "18443:8443"
+   - "8787:8787"
+  restart: always
+  networks:
+   - host
+networks:
+   host:
