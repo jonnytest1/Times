@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "times")
-public class Time {
+public class Time extends model {
 
 	String time1Date;
 	String time1;

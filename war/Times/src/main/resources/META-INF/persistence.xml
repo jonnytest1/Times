@@ -9,20 +9,10 @@
   	<jta-data-source>java:jboss/MariaDBDS</jta-data-source>
 	<class>app.model.Time</class>
     <properties>
+   		 <property name = "hibernate.show_sql" value = "true" />
          <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
-         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://maria:3306/times"/>
          <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
           <property name="hibernate.hbm2ddl.auto" value="none"/>
-      </properties>
-   </persistence-unit>
-   <persistence-unit name="mariaCDB">
-  	<jta-data-source>java:jboss/MariaDBDS</jta-data-source>
-	<class>app.model.Time</class>
-    <properties>
-         <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
-         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://maria:3306/times"/>
-         <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
-          <property name="hibernate.hbm2ddl.auto" value="create"/>
       </properties>
    </persistence-unit>
 </persistence>

@@ -91,6 +91,30 @@
     </management>
     <profile>
         <subsystem xmlns="urn:jboss:domain:logging:3.0">
+        	<custom-handler name="GelfLogger" class="biz.paluch.logging.gelf.jboss7.JBoss7GelfLogHandler" module="biz.paluch.logging">
+                <level name="INFO" />
+                <properties>
+                    <property name="host" value="tcp:192.168.99.100" />
+                    <property name="port" value="5046" />
+                    <property name="version" value="1.0" />
+                    <property name="facility" value="times" />
+                    <property name="extractStackTrace" value="true" />
+                    <property name="filterStackTrace" value="false" />
+                    <property name="mdcProfiling" value="true" />
+                    <property name="timestampPattern" value="yyyy-MM-dd HH:mm:ss,SSSS" />
+                    <property name="maximumMessageSize" value="8192" />
+
+                    <!-- This are static fields -->
+                    <property name="additionalFields" value="fieldName1=Times,fieldName2=fieldValue2" />
+                    <!-- Optional: Specify field types -->
+                    <property name="additionalFieldTypes" value="fieldName1=String,fieldName2=Double,fieldName3=Long" />
+
+                    <!-- This are fields using MDC -->
+                    <property name="mdcFields" value="mdcField1,mdcField2" />
+                    <property name="dynamicMdcFields" value="mdc.*,(mdc|MDC)fields" />
+                    <property name="includeFullMdc" value="true" />
+                </properties>
+            </custom-handler>
             <console-handler name="CONSOLE">
                 <level name="INFO"/>
                 <formatter>
@@ -119,6 +143,7 @@
                 <handlers>
                     <handler name="CONSOLE"/>
                     <handler name="FILE"/>
+                    <handler name="GelfLogger"/>
                 </handlers>
             </root-logger>
             <formatter name="PATTERN">
@@ -152,7 +177,7 @@
                     </security>
                 </datasource>
                 <datasource jta="true" jndi-name="java:jboss/MariaDBDS" pool-name="mariaDatasource" enabled="true" statistics-enabled="true">
-                    <connection-url>jdbc:mysql://maria:3306/times</connection-url>
+                    <connection-url>jdbc:mysql://192.168.99.100:13306/times</connection-url>
                     <driver>mariadb</driver>
                     <security>
                         <user-name>root</user-name>

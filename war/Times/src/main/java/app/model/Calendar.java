@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Calendar")
-public class Calendar {
+public class Calendar extends model {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

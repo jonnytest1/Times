@@ -51,8 +51,11 @@ dependencies {
     // https://mvnrepository.com/artifact/javax/javaee-api
 	providedCompile group: 'javax', name: 'javaee-api', version: '7.0'
 	
+	// https://mvnrepository.com/artifact/org.flywaydb/flyway-gradle-plugin
+	compile group: 'org.flywaydb', name: 'flyway-gradle-plugin', version: '5.1.4'
+	
 	// https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
-	providedCompile group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '1.1.7'
+	compile group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.3.0'
 	
 	
     // https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api
@@ -97,7 +100,15 @@ task copyModules(type: Copy){
     into 'D:/dprogramme/wildfly/jboss-eap-7.1/modules'
     outputs.upToDateWhen { false }
 }
-
+task runDocker(type:Exec) {
+   doFirst {
+        println "Starting docker..."
+        workingDir = file('./../../')
+        commandLine = ['cmd', '/C','start','buidl.bat']
+        // cmd /C start D:/Projects/WorkSpaces/WorldCleaner/devserver/start.bat
+   }
+}
+//build.finalizedBy(runDocker)
 war.dependsOn(copyConfigToWildfly);
 war.finalizedBy(copyToWildfly);
 copyToWildfly.finalizedBy(copyModules)

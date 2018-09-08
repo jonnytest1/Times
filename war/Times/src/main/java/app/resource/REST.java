@@ -1,5 +1,7 @@
 package app.resource;
 
+import java.util.List;
+
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
@@ -25,7 +27,8 @@ public class REST {
 	@Path("/get")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response test() {
-		return Response.status(200).entity(mdb.getTimes()).build();
+		List<Time> times = mdb.getTimes();
+		return Response.status(200).entity(times).build();
 	}
 
 	@POST
@@ -37,8 +40,16 @@ public class REST {
 		return Response.status(200).entity("id: " + time.getId()).build();
 	}
 
+	@GET
+	@Path("/calendar")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getCalendar() {
+		List<Calendar> calendar = mdb.getCalender();
+		return Response.status(200).entity(calendar).build();
+	}
+
 	@POST
-	@Path("/set")
+	@Path("/calendar")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response saveCal(Calendar calendar) {
