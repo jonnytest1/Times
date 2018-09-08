@@ -1,26 +1,32 @@
 version: '3'
 services:
+ wf:
+  image: "jserver"
+  depends_on:
+   - maria
+  ports:
+   - "18081:8080"
+   - "18787:8787"
+  restart: always
+  networks:
+   - host
+  volumes:
+   - "/storage/wildflyVolumes/jserver/:/opt/jboss/wildfly/standalone/deployments/"
  maria:
   image: mariadb
   environment:
     MYSQL_ROOT_PASSWORD: 123
     MYSQL_USER: usr
     MYSQL_PASSWORD: 123
-    MYSQL_DATABASE: times
+    MYSQL_DATABASE: codes
   ports:
-   - "3306:3306"
+   - "13306:3306"
   restart: always
-  networks:
-   - host
- be:
-  image: jonathanheindl/test
-  depends_on:
-   - maria
-  ports: 
-   - "18443:8443"
-   - "8787:8787"
-  restart: always
+  volumes:
+   - "maraidbcodedata:/var/lib/mysql/"
   networks:
    - host
 networks:
    host:
+volumes:
+ maraidbcodedata:
